@@ -1,0 +1,26 @@
+@import '../../Assets/styles/variables.scss';
+@import '../../Assets/styles/mixins.scss';
+
+.header {
+    &__top {
+        @include gradient;
+        height: 35px;
+    }
+
+    &__bottom {
+        align-items: center;
+        border-bottom: 1px solid $lightgrey;
+        display: flex;
+        padding: 25px 35px;
+    }
+
+    &__logo {
+        margin-right: 40px;
+    }
+
+    &__text {
+        border-left: 1px solid $black;
+        font-size: 18px;
+        padding-left: 15px;
+    }
+}

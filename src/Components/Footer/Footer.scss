@@ -1,0 +1,28 @@
+@import '../../Assets/styles/mixins.scss';
+@import '../../Assets/styles/variables.scss';
+
+.footer {
+    bottom: 0;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+
+    &__delim {
+        @include gradient;
+        height: 4px;
+    }
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 15px;
+    }
+
+    &__logo {
+        height: 30px;
+    }
+
+    &__copyright {
+        font-size: 14px;
+    }
+}
