@@ -6,18 +6,9 @@ import { withStyles } from '@material-ui/core/styles';
 
 const ProcessStart = (props) => {
     const { onStepFinish } = props;
+    const processUrl = 'https://wisconsin.integrity.com.ua/engine-rest/process-definition/key/ukrsibbank-demo-credit/start';
+    const taskUrl = 'https://wisconsin.integrity.com.ua/engine-rest/task?processInstanceId=%D0%98%D0%94_%D0%9F%D0%A0%D0%9E%D0%A6%D0%95%D0%A1%D0%A1%D0%90';
     const [clientCode, setClientCode] = useState('');
-
-    function isNumber(evt) {
-        console.log(evt);
-        evt = (evt) ? evt : window.event;
-        var charCode = (evt.which) ? evt.which : evt.keyCode;
-        console.log(charCode);
-        if (charCode > 31 && (charCode < 48 || charCode > 57)) {
-            return false;
-        }
-        return true;
-    }
 
     const handleCodeChange = ev => {
         const code = ev.target.value;
@@ -25,6 +16,23 @@ const ProcessStart = (props) => {
         if (regExp.test(code) && code.length < 9) {
             setClientCode(code);
         }
+    }
+
+    const getProcessData = async () => {
+        const response = await fetch(processUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                variables: {
+                    clientIdentificationCode: {
+                        value: '3385308153',
+                    },
+                },
+            }),
+        });
+        console.log(response);
     }
 
     const StartButton = withStyles((theme) => ({
@@ -59,18 +67,23 @@ const ProcessStart = (props) => {
     return (
         <div className="wrapper start">
             <p className="start__text">
-                Для початку процесу заповнення заявки введіть ЕДРПОУ клієнта і натисніть кнопку
+                Для початку процесу заповнення заявки введіть ЄДРПОУ клієнта і натисніть кнопку
             </p>
             <form autoComplete="off" className="start__form">
                 <CodeField
                     id="client-code"
-                    label="ЕДРПОУ клієнта"
+                    label="ЄДРПОУ клієнта"
                     variant="outlined"
                     value={clientCode}
                     onChange={handleCodeChange}
                     autoFocus
                 />
-                <StartButton variant="contained" color="primary">Пошук</StartButton>
+                <StartButton
+                    variant="contained"
+                    color="primary"
+                    onClick={getProcessData}>
+                        Пошук
+                </StartButton>
             </form>
         </div>
     );

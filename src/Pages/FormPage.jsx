@@ -3,15 +3,19 @@ import ProcessStart from '../Components/ProcessStart/ProcessStart';
 import CreditForm from '../Components/CreditForm/CreditForm';
 
 const FormPage = () => {
-    const [processStarted, setProcessStarted] = useState(false);
+    const [processState, setProcessState] = useState({
+        started: false,
+        processId: 0,
+        taskId: 0,
+    });
 
-    const startProcess = () => {
-        setProcessStarted(true);
+    const setProcessData = data => {
+        setProcessState(data);
     }
 
     return (
         <>
-            {processStarted ? <CreditForm /> : <ProcessStart onStepFinish={startProcess} />}
+            {processState.started ? <CreditForm /> : <ProcessStart onStepFinish={setProcessData} />}
         </>
     );
 };
