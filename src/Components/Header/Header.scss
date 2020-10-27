@@ -24,3 +24,27 @@
         padding-left: 15px;
     }
 }
+
+@media (max-width: 580px) {
+    .header {
+        &__text {
+            display: none;
+        }
+
+        &__bottom {
+            justify-content: center;
+        }
+
+        &__logo {
+            margin-right: 0px;
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    .header {
+        &__logo {
+            height: 30px;
+        }
+    }
+}

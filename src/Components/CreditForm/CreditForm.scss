@@ -1,0 +1,64 @@
+.wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1200px;
+    padding: 0 10px 90px 10px;
+}
+
+.credit-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__fields {
+        display: flex;
+        flex-direction: column;
+        width: 49%;
+
+        & > div {
+            margin-top: 20px;
+        }
+    }
+
+    &__checkboxes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__file {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__file-input {
+        display: none;
+    }
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #01935d !important;
+}
+
+.MuiFormLabel-root.Mui-focused {
+    color: #01935d !important;
+}
+
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: #01935d !important;
+}
+
+.MuiTypography-displayBlock {
+    cursor: pointer;
+}
+
+.MuiSvgIcon-root {
+    cursor: pointer;
+}

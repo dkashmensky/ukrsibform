@@ -7,15 +7,16 @@ const FormPage = () => {
         started: false,
         processId: 0,
         taskId: 0,
+        clientCode: '',
     });
 
-    const setProcessData = data => {
+    const setProcessData = (data) => {
         setProcessState(data);
     }
 
     return (
         <>
-            {processState.started ? <CreditForm /> : <ProcessStart onStepFinish={setProcessData} />}
+            {processState.started ? <CreditForm key="credit-form-1" data={processState} /> : <ProcessStart key="start-1" onStepFinish={setProcessData} />}
         </>
     );
 };
