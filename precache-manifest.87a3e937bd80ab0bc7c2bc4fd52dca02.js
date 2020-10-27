@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e2d3835ab1d1b5654c4e4177aee452c9",
+    "revision": "5e119c3285511c25685ba13501b4aba8",
     "url": "/ukrsibform/index.html"
   },
   {
-    "revision": "69a607fedfe7dfb2dc54",
-    "url": "/ukrsibform/static/css/main.659d6668.chunk.css"
+    "revision": "06f572e0bcb50806d6db",
+    "url": "/ukrsibform/static/css/main.227a34bb.chunk.css"
   },
   {
-    "revision": "036a6d5f4e8f2ec546bc",
-    "url": "/ukrsibform/static/js/2.7af42c19.chunk.js"
+    "revision": "a5e9fab27e96c896f4c9",
+    "url": "/ukrsibform/static/js/2.097ee8a1.chunk.js"
   },
   {
     "revision": "6397acf4c5cafcd591a770ce33fc3e2f",
-    "url": "/ukrsibform/static/js/2.7af42c19.chunk.js.LICENSE.txt"
+    "url": "/ukrsibform/static/js/2.097ee8a1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "69a607fedfe7dfb2dc54",
-    "url": "/ukrsibform/static/js/main.ee613ce9.chunk.js"
+    "revision": "06f572e0bcb50806d6db",
+    "url": "/ukrsibform/static/js/main.750fdb9d.chunk.js"
   },
   {
     "revision": "144cc6973d304258aa49",
