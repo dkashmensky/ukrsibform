@@ -228,9 +228,17 @@ const CreditForm = (props) => {
         return `0${month + 1}`;
     }
 
+    const getDay = (day) => {
+        if (day > 9) {
+            return day;
+        }
+
+        return `0${day}`;
+    }
+
     const getToday = () => {
         const date = new Date();
-        return `${date.getFullYear()}-${getMonth(date.getMonth())}-${date.getDate()}`
+        return `${date.getFullYear()}-${getMonth(date.getMonth())}-${getDay(date.getDate())}`
     }
 
     const [reqDate, setReqDate] = useState(getToday());
