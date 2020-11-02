@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5e119c3285511c25685ba13501b4aba8",
+    "revision": "d56b448b0ab31455b970e220aa0a42c1",
     "url": "/ukrsibform/index.html"
   },
   {
-    "revision": "06f572e0bcb50806d6db",
+    "revision": "9355a37d62634ae775ef",
     "url": "/ukrsibform/static/css/main.227a34bb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ukrsibform/static/js/2.097ee8a1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "06f572e0bcb50806d6db",
-    "url": "/ukrsibform/static/js/main.750fdb9d.chunk.js"
+    "revision": "9355a37d62634ae775ef",
+    "url": "/ukrsibform/static/js/main.37ff94bd.chunk.js"
   },
   {
     "revision": "144cc6973d304258aa49",

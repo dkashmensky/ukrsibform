@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ukrsibform/static/css/main.227a34bb.chunk.css",
-    "main.js": "/ukrsibform/static/js/main.750fdb9d.chunk.js",
-    "main.js.map": "/ukrsibform/static/js/main.750fdb9d.chunk.js.map",
+    "main.js": "/ukrsibform/static/js/main.37ff94bd.chunk.js",
+    "main.js.map": "/ukrsibform/static/js/main.37ff94bd.chunk.js.map",
     "runtime-main.js": "/ukrsibform/static/js/runtime-main.d6a0d30f.js",
     "runtime-main.js.map": "/ukrsibform/static/js/runtime-main.d6a0d30f.js.map",
     "static/js/2.097ee8a1.chunk.js": "/ukrsibform/static/js/2.097ee8a1.chunk.js",
     "static/js/2.097ee8a1.chunk.js.map": "/ukrsibform/static/js/2.097ee8a1.chunk.js.map",
     "index.html": "/ukrsibform/index.html",
-    "precache-manifest.87a3e937bd80ab0bc7c2bc4fd52dca02.js": "/ukrsibform/precache-manifest.87a3e937bd80ab0bc7c2bc4fd52dca02.js",
+    "precache-manifest.01e9bc3fc04860e71751138422681c9f.js": "/ukrsibform/precache-manifest.01e9bc3fc04860e71751138422681c9f.js",
     "service-worker.js": "/ukrsibform/service-worker.js",
     "static/css/main.227a34bb.chunk.css.map": "/ukrsibform/static/css/main.227a34bb.chunk.css.map",
     "static/js/2.097ee8a1.chunk.js.LICENSE.txt": "/ukrsibform/static/js/2.097ee8a1.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.d6a0d30f.js",
     "static/js/2.097ee8a1.chunk.js",
     "static/css/main.227a34bb.chunk.css",
-    "static/js/main.750fdb9d.chunk.js"
+    "static/js/main.37ff94bd.chunk.js"
   ]
 }
